@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/404.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="index.html" class="header__logo logo">
+                    <img src="assets/images/Лого.svg" alt="Логотип" class="logo__image">
+                    <p class="logo__text">Лесник</p>
+                </a>
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a href="catalog.html" class="header__menu-link">Каталог</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="contacts.html" class="header__menu-link">Контакты</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="profile.html" class="header__menu-link">Личный кабинет</a>
+                        </li>
+                        <li class="header__menu-item header__menu-item--hidden">
+                            <a href="login.html" class="header__menu-link">Войти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__button button">
+                    <a href="login.html" class="header__button-link">Войти</a>
+                </button>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="error container">
+        <h1 class="text_big">404</h1>
+        <p class="text">Страницы не существует :(</p>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer__content">
+                <nav class="footer__menu">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="index.html" class="footer__item-link">Главная</a></li>
+                        <li class="footer__item">
+                            <a href="catalog.html" class="footer__item-link">Каталог</a></li>
+                        <li class="footer__item">
+                            <a href="contacts.html" class="footer__item-link">Контакты</a></li>
+                        <li class="footer__item">
+                            <a href="profile.html" class="footer__item-link">Личный кабинет</a></li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__item-link">Бронирование</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="footer__text">Российская Федерация , Чувашская Республика, Чебоксары, ул. Неизвестная, д.52</p>
+                <nav class="footer__menu">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <p class="footer__item-text">88005553335 - ресепшен</p>
+                        </li>
+                        <li class="footer__item">
+                            <p class="footer__item-text">88005553335 - ресепшен</p>
+                        </li>
+                        <li class="footer__item">
+                            <p class="footer__item-text">88005553335 - ресепшен</p>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.header__burger').addEventListener('click', function() {
+            document.querySelector('.header__burger').classList.toggle('active');
+            document.querySelector('.header__menu').classList.toggle('open')
+        })
+    </script>
+</body>
+</html>

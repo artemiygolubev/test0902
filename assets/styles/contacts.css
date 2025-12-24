@@ -1,0 +1,38 @@
+.contacts {
+    margin-top: 50px;
+}
+.contacts__title, .help__title {
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+.contacts__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    column-gap: 5%;
+}
+.help__content {
+    display: flex;
+    column-gap: 5%;
+}
+.help__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.help__text {
+    font-size: 2rem;
+}
+
+@media (max-width: 900px) {
+    .help__content {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    iframe {
+        width: 100%;
+    }
+    .help__info {
+        row-gap: 30px;
+    }
+}

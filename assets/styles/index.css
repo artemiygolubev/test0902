@@ -1,0 +1,109 @@
+.slider{
+    width: 100%;
+    height: 90vh;
+    background: url(../images/baza-otdyha-Moskovskaya-oblast.jpg) center / cover;
+}
+
+.about__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about__text{
+    row-gap: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    text-align: left;
+    width: 40%;
+}
+.about__text-title{
+    font-size: 1.5rem;
+    width: 100%;
+}
+.about__text-text{
+    font-size: 1.25rem;
+    font-style: italic;
+    font-family: 'montserrat italic';
+}
+.about__buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.about__button{
+    font-size: 1.25rem;
+    padding: 4% 7%;
+}
+.about__button-link{
+    text-decoration: none;
+    color: black;
+}
+.button--green{
+    background: #BCC8A5;
+}
+
+.about__image{
+    width: 50%;
+}
+
+.services__title{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.services__blocks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    flex-wrap: wrap;
+}
+.services__block{
+    min-width: 200px;
+    width: calc(100% / 3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.services__text{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.map{
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 900px) {
+    .about__content{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about__text {
+        width: 100%;
+    }
+    .about__image {
+        display: none;
+    }
+
+    .services__title {
+        text-align: center;
+    }
+    .services__blocks {
+        justify-content: center;
+        row-gap: 50px;
+    }
+}
+@media (max-width: 450px) {
+    .about__buttons {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    .about__button {
+        width: 100%;
+    }
+}
