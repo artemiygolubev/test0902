@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /registration.html
+Disallow: /login.html
+Disallow: /404.html
+Disallow: /profile.html
+
+Allow: /index.html
+Allow: /catalog.html
+Allow: /product.html
+Allow: /contacts.html
